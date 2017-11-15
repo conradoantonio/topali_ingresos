@@ -1,0 +1,26 @@
+SELECT personas.`nombre_persona`, ingresos.`main_id` AS coto_id, cotos.`nombre` AS nombre_coto,
+ingresos.`sub_id` AS subcoto_id, subcotos.`nombre_subcoto`, ingresos.`tipo_visita_id`,
+tipo_visita.`tipo` AS tipo_visita, ingresos.`motivo_visita`, personas.`foto_identificacion`,
+personas.`foto_placa`
+FROM ingresos
+LEFT JOIN personas
+ON ingresos.`personas_id` = personas.`id`
+LEFT JOIN tipo_visita
+ON ingresos.`tipo_visita_id` = tipo_visita.`id`
+LEFT JOIN cotos
+ON ingresos.`main_id` = cotos.`id`
+LEFT JOIN subcotos
+ON ingresos.`sub_id` = subcotos.`id`
+
+
+Datos de formulario de ingreso.
+- Nombre del visitante (con buscador en input)
+- Placas (input y opcional)
+- Foto persona (Aquí quedaron de que podría ser simplemente una foto, que ellos decidieran si sería de las placas del auto o de la persona)
+- Foto IFE (Esta tiene el plugin de la webcam)
+- Tipo de visita (Vista, proveedor, domestica/obra)
+* A dónde se dirige:
+	- Número de casa (supongo que se refiere al exterior)
+	- Número interior
+	- Nombre de persona con la que se dirige
+- Comentarios (textarea)

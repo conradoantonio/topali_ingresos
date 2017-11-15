@@ -1,0 +1,31 @@
+[16-Jun-2017 14:54:21 America/Chicago] PHP Warning:  require(/home/ingresot/public_html/../bootstrap/autoload.php): failed to open stream: No such file or directory in /home/ingresot/public_html/index.php on line 22
+[16-Jun-2017 14:54:21 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home/ingresot/public_html/../bootstrap/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ingresot/public_html/index.php on line 22
+[06-Jul-2017 17:34:08 America/Chicago] PHP Warning:  include(/home/ingresot/app/Http/Kernel.php): failed to open stream: No such file or directory in /home/ingresot/vendor/composer/ClassLoader.php on line 412
+[06-Jul-2017 17:34:08 America/Chicago] PHP Warning:  include(): Failed opening '/home/ingresot/app/Http/Kernel.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ingresot/vendor/composer/ClassLoader.php on line 412
+[06-Jul-2017 17:34:08 America/Chicago] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class App\Http\Kernel does not exist' in /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Kernel', Array)
+#2 /home/ingresot/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#3 /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php(220): Illuminate\Foundation\Application->make('App\\Http\\Kernel', Array)
+#4 /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php(738): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/ingresot/vendor/la in /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 741
+[06-Jul-2017 17:34:15 America/Chicago] PHP Warning:  include(/home/ingresot/app/Http/Kernel.php): failed to open stream: No such file or directory in /home/ingresot/vendor/composer/ClassLoader.php on line 412
+[06-Jul-2017 17:34:15 America/Chicago] PHP Warning:  include(): Failed opening '/home/ingresot/app/Http/Kernel.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ingresot/vendor/composer/ClassLoader.php on line 412
+[06-Jul-2017 17:34:15 America/Chicago] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class App\Http\Kernel does not exist' in /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php:741
+Stack trace:
+#0 /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php(741): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Kernel', Array)
+#2 /home/ingresot/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(674): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#3 /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php(220): Illuminate\Foundation\Application->make('App\\Http\\Kernel', Array)
+#4 /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php(738): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/ingresot/vendor/la in /home/ingresot/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 741
+[17-Jul-2017 21:39:25 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Session' not found in /home/ingresot/app/Http/Controllers/EgresosController.php on line 67
+[17-Jul-2017 21:39:44 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Session' not found in /home/ingresot/app/Http/Controllers/EgresosController.php on line 67
+[17-Jul-2017 21:40:19 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Coto' not found in /home/ingresot/app/Http/Controllers/EgresosController.php on line 72
+[17-Jul-2017 21:42:36 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Guardia' not found in /home/ingresot/app/Http/Controllers/EgresosController.php on line 71
+[17-Jul-2017 21:43:15 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Redirect' not found in /home/ingresot/app/Http/Controllers/EgresosController.php on line 31
+[18-Jul-2017 15:49:54 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ingresot/app/Http/Controllers/IngresosController.php on line 249
+[19-Jul-2017 00:23:05 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Session' not found in /home/ingresot/app/Http/Controllers/SolicitudesController.php on line 190
+[19-Jul-2017 16:36:16 UTC] PHP Fatal error:  Call to undefined function App\isnumeric() in /home/ingresot/app/Ingreso.php on line 43
+[21-Jul-2017 21:07:23 UTC] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /home/ingresot/app/Http/Controllers/logController.php on line 67
