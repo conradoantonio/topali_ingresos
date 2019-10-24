@@ -65,7 +65,7 @@ input:-webkit-autofill {
                         <div class="form-group">
                             <label class="left">Estados</label>
                             <select class="form-control" id="estado_id" name="estado_id">
-                                <option value="0">Elija una opción</option>
+                                <option value="">Elija una opción</option>
                                 @foreach( $estados as $estado)
                                 	<option value="{{$estado->id_estado}}">{{$estado->estado}}</option>
                                 @endforeach
