@@ -175,14 +175,14 @@ class CotosController extends Controller
         try {
             //$usuarios_relacionados = DB::table('users')->pluck('title')->first();
             $coto = Coto::where('users_id', $req->id)->first();
-            Casa::where('coto_id', $coto->id)->update(['status' => 0]);
             $usuarios_casas = Casa::where('coto_id', $coto->id)->lists('users_id');
 
-            Users::where('id', $req->id)->update(['status' => 0]);//Se borra el administrador del servicio.
-            Users::where('id', $coto->guardia_users_id)->update(['status' => 0]);//Se da de baja también el guardia.
-            Users::whereIn('id', $usuarios_casas)->update(['status' => 0]);//Se dan de baja los usuarios casa del servicio.
+            Users::whereIn('id', $usuarios_casas)->delete();//Se borran los usuarios casa del servicio.
+            Users::where('id', $req->id)->delete();//Se borra el administrador del servicio.
+            Users::where('id', $coto->guardia_users_id)->delete();//Se borra el guardia.
+            #Casa::where('coto_id', $coto->id)->delete();
 
-            Coto::where('users_id', $req->id)->update(['status' => 0]);
+            Coto::where('users_id', $req->id)->delete();
 
             /*Coto::where('users_id', $req->id)->delete();
             Users::where('id', $req->id)->delete();*/

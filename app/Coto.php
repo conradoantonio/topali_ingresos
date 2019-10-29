@@ -24,6 +24,15 @@ class Coto extends Model
     ];
 
     /**
+     * Get the rol of the current user.
+     *
+     */
+    public function user()
+    {
+        return $this->belongsTo('App\User', 'users_id');
+    }
+
+    /**
      * Obtiene los cotos con su usuarios del sistema y guardia asignado.
      *
      * @return \Illuminate\Database\Query

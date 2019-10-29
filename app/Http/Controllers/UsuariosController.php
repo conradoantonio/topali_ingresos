@@ -139,7 +139,7 @@ class UsuariosController extends Controller
     }
 
     /**
-     * Elimina un usuario del sistema de forma lógica.
+     * Elimina un usuario del sistema de forma física.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return Nada
@@ -148,7 +148,8 @@ class UsuariosController extends Controller
     {
         return DB::table('users')
         ->where('id', $request->id)
-        ->update(['status' => 0]);
+        ->delete();
+        #->update(['status' => 0]);
         /*$coto_id = DB::table('cotos')->where('users_id', $request->id)->pluck('id');
         $subcotos__users_id = DB::table('subcotos')->where('cotos_id', $coto_id)->lists('users_id');
         $negocio_id = DB::table('negocios')->where('users_id', $request->id)->pluck('id');
